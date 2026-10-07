@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
-    <title>TrendFX Studio Pro - GitHub Pages Deployment</title>
+    <title>TrendFX Studio Pro - GitHub Pages PWA</title>
     
     <!-- Android & iOS Mobile Web App Meta Tags -->
     <meta name="mobile-web-app-capable" content="yes">
@@ -13,17 +13,17 @@
     <meta name="apple-mobile-web-app-title" content="TrendFX Pro">
     <meta name="application-name" content="TrendFX Pro">
 
-    <!-- Web App Manifest (Data URL) optimized for GitHub Pages relative paths -->
+    <!-- GitHub Pages Optimized Relative Web App Manifest (Data URI) -->
     <link rel="manifest" href="data:application/manifest+json;base64,ewogICJuYW1lIjogIlRyZW5kRlggU3R1ZGlvIFBybyIsCiAgInNob3J0X25hbWUiOiAiVHJlbmRGWFAiLAogICJzdGFydF91cmwiOiAiLi8iLAogICJkaXNwbGF5IjogInN0YW5kYWxvbmUiLAogICJiYWNrZ3JvdW5kX2NvbG9yIjogIiMwOTBEMTQiLAogICJ0aGVtZV9jb2xvciI6ICIjMDkwRDE0IiwKICBpY29ucyI6IFsKICAgIHsKICAgICAgInNyYyI6ICJodHRwczovL2Nkbi1pY29ucy1wbmcuZmxhdGljb24uY29tLzUxMi8zMTM1LzMxMzU3MTUucG5nIiwKICAgICAgInNpemVzIjogIjUxMng1MTIiLAogICAgICAidHlwZSI6ICJpbWFnZS9wbmciLAogICAgICAicHVycG9zZSI6ICJhbnkgbWFza2FibGUiCiAgICB9
   ]
 }">
 
-    <!-- Advanced Service Worker Registration for GitHub Pages Offline Caching -->
+    <!-- Advanced Service Worker Registration for GitHub Pages Offline Caching & Background Sync -->
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', async () => {
                 const swCode = `
-                    const CACHE_NAME = 'trendfx-pro-gh-v1';
+                    const CACHE_NAME = 'trendfx-pro-gh-v2';
                     const ASSETS = ['./', location.href];
                     
                     self.addEventListener('install', (e) => {
